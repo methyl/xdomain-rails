@@ -94,7 +94,7 @@ or you want to customize variable names, just create file
 `config/initializers/xdomain_rails.rb` (**server restart required**):
 
 ```ruby
-Xdomain.configure do |config|
+XdomainRails.configure do |config|
   # path to default xdomain proxy
   # default: '/xdomain/proxy'
 
