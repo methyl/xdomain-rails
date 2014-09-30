@@ -15,7 +15,7 @@ And then execute:
 
 ## Usage
 
-The gem provides very simple API.
+The gem provides a very simple API.
 
 Consulting [XDomain README](https://github.com/jpillora/xdomain)
 before using this gem is a good idea.
@@ -24,8 +24,8 @@ I highly recommend and assume that you are using
 [dotenv-rails](https://github.com/bkeepers/dotenv).
 
 Let's say we want to configure http://master.example.com
-(the domain which you are making requests from) as master domain
-and http://slave.example.com (which receives requests) as slave domain.
+(the domain which you are making requests from) as a master domain
+and http://slave.example.com (which receives requests) as a slave domain.
 
 ### Slave domain
 
@@ -41,7 +41,7 @@ Add following ENV variable to your .env:
 XDOMAIN_MASTERS=http://master.example.com
 ```
 
-Note: you can also limit scope, use wildcards and add few domains,
+Note: you can also limit a scope, use wildcards and add few domains,
 consult [configuration section](#configuration) for more informations:
 ```
 XDOMAIN_MASTERS=*.example.com/api/*.json *.another.com
@@ -72,7 +72,7 @@ $.get('http://slave.example.com/secret.json')
 
 More sophisticated configuration is supported.
 
-By default, gem will load domain configuration as JSON
+By default, gem will load a domain configuration as JSON
 from following ENV variables:
 
 ```
@@ -82,7 +82,7 @@ XDOMAIN_SLAVES='["http://first.example.com", "http://another.example.com/another
 
 As in XDomain, you can use wildcards in your master domains setup.
 
-To change path for proxy, which by default is `/xdomain/proxy`
+To change the path for proxy, which by default is `/xdomain/proxy`
 you can just add it in ENV variable:
 
 ```
