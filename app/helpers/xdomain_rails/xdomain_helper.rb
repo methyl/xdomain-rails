@@ -12,16 +12,16 @@ module XdomainRails
 
     private
 
-    def config
+    def configuration
       Rails.configuration.xdomain
     end
 
     def master_domains
-      config.master_domains
+      configuration.master_domains
     end
 
     def slave_domains
-      config.slave_domains
+      configuration.slave_domains
     end
   end
 end
