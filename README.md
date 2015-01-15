@@ -109,6 +109,9 @@ XdomainRails.configure do |config|
   # default: ENV['XDOMAIN_SLAVES']
 
   # config.slave_domains =
+
+  # how long should proxy be cached
+  # config.cache = 
 end
 ```
 

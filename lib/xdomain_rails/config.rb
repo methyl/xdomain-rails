@@ -3,12 +3,13 @@ require 'uri'
 module XdomainRails
   class Config
     attr_reader :master_domains, :slave_domains
-    attr_accessor :proxy_path
+    attr_accessor :proxy_path, :cache
 
     def initialize
       self.proxy_path   = '/xdomain/proxy'
       self.master_domains = ENV["XDOMAIN_MASTERS"]
       self.slave_domains  = ENV["XDOMAIN_SLAVES"]
+      self.cache = nil
     end
 
     def master_domains=(domains)
