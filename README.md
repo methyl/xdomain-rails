@@ -111,7 +111,7 @@ XdomainRails.configure do |config|
   # config.slave_domains =
 
   # how long should proxy be cached
-  # config.cache = 
+  # config.cache =
 end
 ```
 
